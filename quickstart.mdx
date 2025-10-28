@@ -1,80 +1,78 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Get started with Genny paper trading in minutes"
 ---
 
-## Get started in three steps
+## Start Trading in 3 Steps
 
-Get your documentation site running locally and make your first customization.
+Get Genny up and running and start paper trading memecoins immediately.
 
-### Step 1: Set up your local environment
+### Step 1: Install the Chrome Extension
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+  <Accordion icon="download" title="Download from Chrome Web Store">
+    1. Visit the [Genny Chrome Extension](https://chromewebstore.google.com/detail/genny-paper-trading-for-me/extension-id-placeholder) in the Chrome Web Store
+    2. Click "Add to Chrome" to install the extension
+    3. Pin the extension to your toolbar for easy access
+
+    <Tip>The extension works on pump.fun and other memecoin trading sites.</Tip>
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+  <Accordion icon="shield-check" title="Grant Permissions">
+    When prompted, allow the extension to:
+    - Read and change site data on pump.fun
+    - Access your browsing history (for trading context only)
+
+    <Warning>Genny never accesses your real wallets or funds. All trading is simulated.</Warning>
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+### Step 2: Create Your Profile
 
 <AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+  <Accordion icon="user-plus" title="Link Your Account">
+    1. Click the Genny extension icon in your browser
+    2. Click "Get Funded" to visit genny.lol
+    3. Enter a username and click "Link Account"
+    4. Check your email for a verification code
+    5. Enter the code to complete account linking
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
+    <Tip>Optional: Connect your X (Twitter) account for social features and profile pictures.</Tip>
   </Accordion>
 </AccordionGroup>
 
-### Step 3: Go live
+### Step 3: Start Paper Trading
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
+<Accordion icon="play" title="Make Your First Trade">
+  1. Visit [pump.fun](https://pump.fun) in your browser
+  2. Look for the Genny trading panel on any memecoin page
+  3. Click "Buy" or "Sell" with your virtual SOL balance
+  4. Watch your portfolio grow on the leaderboard!
+
+  <Note>You start with 1,000 virtual SOL to practice trading.</Note>
 </Accordion>
 
-## Next steps
-
-Now that you have your docs running, explore these key features:
+## What You Can Do
 
 <CardGroup cols={2}>
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
+<Card title="Paper Trading" icon="chart-line" href="/trading/paper-trading">
+  Buy and sell memecoins with virtual currency. Practice strategies risk-free.
 </Card>
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
+<Card title="Track Performance" icon="trophy" href="/trading/leaderboards">
+  Monitor your P&L, win rate, and trading volume on global leaderboards.
 </Card>
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
+<Card title="Extension Features" icon="browser" href="/extension/features">
+  Explore advanced trading tools and real-time market integration.
 </Card>
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
+<Card title="Social Trading" icon="users" href="/trading/profiles">
+  Connect with other traders and share your achievements.
 </Card>
 
 </CardGroup>
 
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  **Remember**: All trading is simulated. Genny is for educational and entertainment purposes only.
 </Note>

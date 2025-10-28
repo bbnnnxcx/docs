@@ -1,0 +1,78 @@
+---
+title: "Link Profile"
+description: "Link Chrome extension to user profile using OTP"
+---
+
+## POST /profile/link
+
+Link a Chrome extension user account to a web profile using a one-time password (OTP).
+
+### Request Body
+
+<ParamField body="otpCode" type="string" required>
+  Six-digit OTP code from profile creation
+</ParamField>
+
+<ParamField body="extensionUserId" type="string" required>
+  Chrome extension user identifier
+</ParamField>
+
+### Response
+
+<ResponseField name="success" type="boolean" required>
+  Whether the linking was successful
+</ResponseField>
+
+<ResponseField name="profile" type="Profile" required>
+  Linked profile information
+</ResponseField>
+
+### Profile Schema
+
+<ResponseField name="id" type="string" required>
+  Unique profile identifier
+</ResponseField>
+
+<ResponseField name="username" type="string" required>
+  User's chosen username
+</ResponseField>
+
+<ResponseField name="walletAddress" type="string" required>
+  Associated Solana wallet address
+</ResponseField>
+
+### Example Request
+
+```bash
+curl -X POST "https://genny.lol/api/profile/link" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "otpCode": "123456",
+    "extensionUserId": "ext_123456"
+  }'
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "profile": {
+    "id": "user_123456",
+    "username": "trader123",
+    "walletAddress": "7xKXtg2CW99PHZdq3gTtD6zWjTJEe1Z4y8K8Z4v7v7"
+  }
+}
+```
+
+### Error Responses
+
+<AccordionGroup>
+  <Accordion title="400 Bad Request">
+    ```json
+    {
+      "error": "Invalid OTP code"
+    }
+    ```
+  </Accordion>
+</AccordionGroup>
